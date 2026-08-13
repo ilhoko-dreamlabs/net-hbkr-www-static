@@ -2,15 +2,15 @@
 
 HBKR의 기본 랜딩페이지와 GitHub Pages 배포 설정을 담은 독립 정적 사이트입니다.
 
-## Message
+## Positioning
 
 ```text
-Learn. Build. Prove. Work.
+AI/AX Project Execution Network
 ```
 
-HBKR은 AI를 배우고, 만들고, 실제 사용자와 현장에서 검증하며, Evidence를 실제 프로젝트로 연결하는 AI Builder / Project Community를 지향합니다.
+HBKR은 AI/AX 과제를 가진 조직과 검증 가능한 실행자를 연결해 과제 정의, 팀 구성, 구현, 검증까지 이어가는 실행 네트워크를 지향합니다.
 
-`캠핑하는 프로그래머`는 HBKR의 첫 번째 Vertical Community + Field Lab입니다.
+초기에는 자동 매칭보다 운영자 주도의 Discovery와 Team Design으로 실제 프로젝트 데이터를 확보합니다. Community, Learn, Lab은 실행자 발굴과 Evidence 생성을 위한 기반이며, `캠핑하는 프로그래머`는 첫 번째 Vertical Field Lab입니다.
 
 ## Structure
 
@@ -42,6 +42,9 @@ python -m http.server 4173
 ## Current scope
 
 - Informational landing only
+- AI/AX project and practitioner entry paths
+- Manual-first operating model
+- Evidence-based capability concept
 - No member account or database
 - No application or project request form
 - No matching engine
