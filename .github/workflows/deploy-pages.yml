@@ -77,7 +77,7 @@ jobs:
             return 1
           }
 
-          verify_page "https://www.hbkr.net/" "HBKR | AI/AX Project Execution Network"
+          verify_page "https://www.hbkr.net/" "HBKR | AI/AX 프로젝트 실행 네트워크"
           verify_page "https://www.hbkr.net/architecture.html" "HBKR | Service Architecture"
 
           docs_status="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 15 \
