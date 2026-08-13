@@ -63,9 +63,11 @@ jobs:
           verify_page() {
             local url="$1"
             local expected="$2"
+            local content
 
             for attempt in {1..12}; do
-              if curl -fsSL --max-time 15 "${url}?build=${GITHUB_SHA}" | grep -Fq "$expected"; then
+              if content="$(curl -fsSL --max-time 15 "${url}?build=${GITHUB_SHA}")" && \
+                grep -Fq "$expected" <<< "$content"; then
                 return 0
               fi
               sleep 5
