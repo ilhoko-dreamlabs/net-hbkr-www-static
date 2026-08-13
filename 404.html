@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102821" />
+    <title>페이지를 찾을 수 없습니다 | HBKR</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { display: grid; min-height: 100vh; margin: 0; padding: 24px; place-items: center; background: #102821; color: #fffdf7; font-family: sans-serif; }
+      main { width: min(100%, 680px); }
+      p:first-child { color: #36d399; font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+      h1 { margin: 18px 0; font-size: clamp(48px, 11vw, 100px); line-height: .95; }
+      p { color: rgba(255,255,255,.68); font-size: 18px; }
+      a { display: inline-flex; margin-top: 24px; padding: 13px 20px; border-radius: 999px; background: #36d399; color: #102821; font-weight: 700; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>HBKR / 404</p>
+      <h1>길을 다시<br />찾아볼까요?</h1>
+      <p>요청한 페이지가 없거나 아직 준비 중입니다.</p>
+      <a id="home-link" href="/">HBKR 홈으로</a>
+    </main>
+    <script>
+      const link = document.getElementById("home-link");
+      if (location.hostname.endsWith("github.io")) link.href = "/net-hbkr-www-static/";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "HBKR Builder Community",
+  "short_name": "HBKR",
+  "description": "Learn. Build. Prove. Work.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f0e5",
+  "theme_color": "#102821",
+  "icons": [
+    {
+      "src": "assets/hbkr-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
