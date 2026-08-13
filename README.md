@@ -16,12 +16,25 @@ HBKR은 AI/AX 과제를 가진 조직과 검증 가능한 실행자를 연결해
 
 ```text
 index.html                  Landing page
+architecture.html           Public service architecture preview
 styles.css                 Responsive visual system
 app.js                     Navigation and reveal behavior
 404.html                   GitHub Pages 404
 assets/hbkr-mark.svg       Temporary HBKR mark
 .github/workflows/         GitHub Pages deployment
 ```
+
+## Architecture documents
+
+HBKR 전체 서브도메인과 저장소 계획의 공식 기준선은 다음 문서에서 관리합니다.
+
+- [`docs/00_ARCHITECTURE_INDEX.md`](docs/00_ARCHITECTURE_INDEX.md): 문서 인덱스와 전체 구조
+- [`docs/01_SERVICE_MAP.md`](docs/01_SERVICE_MAP.md): 서브도메인·저장소·서비스 지도
+- [`docs/02_PRODUCT_BOUNDARIES.md`](docs/02_PRODUCT_BOUNDARIES.md): 제품 책임과 핵심 URL
+- [`docs/03_DATA_AND_INTEGRATION.md`](docs/03_DATA_AND_INTEGRATION.md): 데이터 소유권과 연동 원칙
+- [`docs/04_REVENUE_FIRST_ROADMAP.md`](docs/04_REVENUE_FIRST_ROADMAP.md): 수익 우선 구축 로드맵
+- [`docs/05_REPOSITORY_STANDARD.md`](docs/05_REPOSITORY_STANDARD.md): 저장소 공통 표준
+- [`docs/06_DECISIONS_AND_OPEN_QUESTIONS.md`](docs/06_DECISIONS_AND_OPEN_QUESTIONS.md): 확정 결정과 미결정 사항
 
 ## Local preview
 
