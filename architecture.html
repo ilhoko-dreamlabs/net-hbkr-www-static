@@ -9,6 +9,7 @@
       content="HBKR AI/AX 실행 네트워크의 서비스 구조, 초기 Offer, 데이터 경계와 수익 우선 구축 로드맵입니다."
     />
     <meta name="theme-color" content="#0b2019" />
+    <link rel="canonical" href="https://www.hbkr.net/architecture.html" />
     <title>HBKR | Service Architecture</title>
     <link rel="icon" href="assets/hbkr-mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -62,7 +63,7 @@
             <code>learn</code>, <code>lab</code>은 사람과 Evidence를 만드는 기반이 됩니다.
           </p>
           <div class="architecture-statuses" aria-label="현재 설계 상태">
-            <div><strong>01</strong><span>IMPLEMENTED</span><small>www static / preview</small></div>
+            <div><strong>01</strong><span>LIVE SERVICE</span><small>www static / HTTPS</small></div>
             <div><strong>08</strong><span>PLANNED SERVICES</span><small>trigger based</small></div>
             <div><strong>P0</strong><span>CURRENT PRIORITY</span><small>revenue first</small></div>
           </div>
@@ -71,8 +72,8 @@
         <aside class="architecture-ledger" data-reveal>
           <header><span>READ THIS FIRST</span><strong>STATUS / 2026</strong></header>
           <div class="ledger-state ledger-active">
-            <span>PREVIEW</span>
-            <div><strong>www static landing</strong><small>GitHub Pages 운영 · hbkr.net DNS 미연결</small></div>
+            <span>LIVE</span>
+            <div><strong>www.hbkr.net</strong><small>GitHub Pages · custom domain · HTTPS</small></div>
           </div>
           <div class="ledger-state">
             <span>PLANNED</span>
@@ -162,9 +163,9 @@
 
           <div class="architecture-map" data-reveal>
             <article class="service-node node-www">
-              <header><span>PREVIEW</span><small>STATIC</small></header>
+              <header><span>LIVE</span><small>STATIC</small></header>
               <p>FRONT DOOR</p>
-              <h3>www.hbkr.net <small>(target)</small></h3>
+              <h3>www.hbkr.net</h3>
               <code>net-hbkr-www-static</code>
               <strong>브랜드 · 신뢰 · 양쪽 시장 유입</strong>
             </article>
@@ -398,7 +399,7 @@
               <li>계약 주체와 수익 구조</li>
               <li>공개 Inventory와 개인정보 범위</li>
               <li>각 Platform의 Framework와 Hosting</li>
-              <li>실제 hbkr.net DNS 연결</li>
+              <li>루트 hbkr.net Redirect와 DNS</li>
             </ul>
           </article>
         </div>

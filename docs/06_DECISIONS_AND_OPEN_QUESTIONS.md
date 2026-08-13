@@ -68,6 +68,16 @@ HungryBoxer는 HBKR의 역사로 보존한다. 현재 HBKR의 약자로 억지�
 
 무료 단계는 GO, HOLD, AI 불필요를 판단하는 선별 단계이며 해결안과 상세 Scope를 무료로 제공하지 않는다. 유료 Discovery의 가격과 기간은 아직 미정이다.
 
+### D-011 WWW Canonical Domain
+
+`www.hbkr.net`을 WWW Static Site의 Canonical Production Domain으로 사용한다.
+
+- Hosting: GitHub Pages
+- DNS: `www.hbkr.net CNAME ilhoko-dreamlabs.github.io`
+- HTTPS: Enforced
+- Repository: `CNAME` 파일로 기준선 유지
+- 루트 `hbkr.net`: 아직 미연결
+
 ## 2. 제안 상태
 
 아래는 설계 권장안이며 실제 운영 전 확정이 필요하다.
@@ -146,7 +156,7 @@ Member와 고객 동의 모델이 필요하다.
 ## 5. 기술 미결정
 
 - Framework
-- Hosting Provider
+- `www` 이외 서비스의 Hosting Provider
 - Database
 - OAuth Provider
 - Email·Notification Provider

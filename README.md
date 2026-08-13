@@ -21,6 +21,8 @@ styles.css                 Responsive visual system
 app.js                     Navigation and reveal behavior
 404.html                   GitHub Pages 404
 assets/hbkr-mark.svg       Temporary HBKR mark
+CNAME                      Canonical GitHub Pages custom domain
+sitemap.xml                Public landing sitemap
 .github/workflows/         GitHub Pages deployment
 ```
 
@@ -50,7 +52,7 @@ python -m http.server 4173
 
 `main` 브랜치에 push하면 GitHub Actions가 정적 파일을 GitHub Pages에 배포합니다.
 
-커스텀 도메인은 아직 연결하지 않았습니다. `www.hbkr.net` DNS를 연결할 때 GitHub Pages 설정과 `CNAME` 파일을 함께 추가합니다.
+Production URL은 `https://www.hbkr.net/`입니다. GitHub Pages custom domain과 HTTPS가 활성화되어 있고 `CNAME` 파일로 저장소 기준선을 유지합니다. 루트 `hbkr.net` Redirect와 다른 Subdomain DNS는 아직 구성하지 않았습니다.
 
 ## Current scope
 

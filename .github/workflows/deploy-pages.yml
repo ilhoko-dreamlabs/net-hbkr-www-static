@@ -22,16 +22,66 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
-      - name: Upload static site
-        uses: actions/upload-pages-artifact@v4
+      - name: Prepare public site
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/assets
+          cp \
+            index.html \
+            architecture.html \
+            404.html \
+            styles.css \
+            app.js \
+            site.webmanifest \
+            robots.txt \
+            sitemap.xml \
+            CNAME \
+            .nojekyll \
+            _site/
+          cp -R assets/. _site/assets/
+
+      - name: Upload public site
+        uses: actions/upload-pages-artifact@v5
         with:
-          path: .
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+
+      - name: Verify production pages
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          verify_page() {
+            local url="$1"
+            local expected="$2"
+
+            for attempt in {1..12}; do
+              if curl -fsSL --max-time 15 "${url}?build=${GITHUB_SHA}" | grep -Fq "$expected"; then
+                return 0
+              fi
+              sleep 5
+            done
+
+            echo "Verification failed: ${url}" >&2
+            return 1
+          }
+
+          verify_page "https://www.hbkr.net/" "HBKR | AI/AX Project Execution Network"
+          verify_page "https://www.hbkr.net/architecture.html" "HBKR | Service Architecture"
+
+          docs_status="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 15 \
+            "https://www.hbkr.net/docs/00_ARCHITECTURE_INDEX.md?build=${GITHUB_SHA}")"
+
+          if [[ "$docs_status" != "404" ]]; then
+            echo "Internal docs are publicly reachable: HTTP ${docs_status}" >&2
+            exit 1
+          fi

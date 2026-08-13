@@ -71,9 +71,10 @@ status.hbkr.net  유료 서비스 상태 고지가 필요해질 때 도입
 ## 5. 현재 기준선
 
 - 존재하는 저장소: `net-hbkr-www-static`
-- 존재하는 배포: GitHub Pages 기반 기본 랜딩
+- 존재하는 배포: `www.hbkr.net` GitHub Pages 기반 Landing과 Architecture Preview
 - 아직 만들지 않은 저장소: `work`, `ops`, `cafe`, `lab`, `learn`, `api`, `id`, `status`
-- 아직 연결하지 않은 것: `www.hbkr.net`과 모든 하위 DNS
+- 연결된 DNS: `www.hbkr.net` CNAME과 HTTPS
+- 아직 연결하지 않은 것: 루트 `hbkr.net` Redirect, `work`, `ops`, `cafe`, `lab`, `learn`, `api`, `id`, `status` DNS
 - 아직 확정하지 않은 것: Framework, DB, OAuth, 결제, 실제 LLM API, production hosting
 
 ## 6. 최상위 사업 원칙
@@ -88,4 +89,3 @@ status.hbkr.net  유료 서비스 상태 고지가 필요해질 때 도입
 8. 점수만으로 사람과 프로젝트를 판단하지 않는다.
 9. 공유 Backend와 통합 인증은 필요가 입증된 이후 분리한다.
 10. 아직 없는 기능, 인력, 계약 조건을 있는 것처럼 표시하지 않는다.
-
