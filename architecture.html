@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="HBKR AI/AX 실행 네트워크의 서비스 구조, 초기 Offer, 데이터 경계와 수익 우선 구축 로드맵입니다."
+    />
+    <meta name="theme-color" content="#0b2019" />
+    <link rel="canonical" href="https://www.hbkr.net/architecture.html" />
+    <title>HBKR | Service Architecture</title>
+    <link rel="icon" href="assets/hbkr-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="architecture-page">
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="HBKR 랜딩으로 이동">
+        <img src="assets/hbkr-mark.svg" alt="" width="40" height="40" />
+        <span>
+          <strong>HBKR</strong>
+          <small>Service Architecture</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="architecture-navigation"
+        data-menu-toggle
+      >
+        <span>메뉴</span>
+        <i aria-hidden="true"></i>
+      </button>
+
+      <nav class="site-nav" id="architecture-navigation" aria-label="설계 페이지 메뉴" data-menu>
+        <a href="#offer">Initial Offer</a>
+        <a href="#map">Service Map</a>
+        <a href="#data">Data Boundary</a>
+        <a href="#roadmap">Roadmap</a>
+        <a class="nav-cta" href="index.html">Landing</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="architecture-hero">
+        <div class="architecture-hero-grid" aria-hidden="true"></div>
+        <div class="architecture-hero-copy" data-reveal>
+          <p class="eyebrow"><span></span> SERVICE ARCHITECTURE / PLANNING BASELINE</p>
+          <h1>
+            하나의 사이트가 아니라,<br />
+            <em>AI/AX 실행이 흐르는</em><br />
+            서비스 체계.
+          </h1>
+          <p>
+            <code>www</code>에서 기업과 실행자가 들어오고, <code>work</code>와
+            <code>ops</code>에서 유료 프로젝트를 실행합니다. <code>cafe</code>,
+            <code>learn</code>, <code>lab</code>은 사람과 Evidence를 만드는 기반이 됩니다.
+          </p>
+          <div class="architecture-statuses" aria-label="현재 설계 상태">
+            <div><strong>01</strong><span>LIVE SERVICE</span><small>www static / HTTPS</small></div>
+            <div><strong>08</strong><span>PLANNED SERVICES</span><small>trigger based</small></div>
+            <div><strong>P0</strong><span>CURRENT PRIORITY</span><small>revenue first</small></div>
+          </div>
+        </div>
+
+        <aside class="architecture-ledger" data-reveal>
+          <header><span>READ THIS FIRST</span><strong>STATUS / 2026</strong></header>
+          <div class="ledger-state ledger-active">
+            <span>LIVE</span>
+            <div><strong>www.hbkr.net</strong><small>GitHub Pages · custom domain · HTTPS</small></div>
+          </div>
+          <div class="ledger-state">
+            <span>PLANNED</span>
+            <div><strong>work · ops · cafe · lab · learn</strong><small>Exit Criteria 충족 후 순차 생성</small></div>
+          </div>
+          <div class="ledger-state ledger-later">
+            <span>LATER</span>
+            <div><strong>api · id · status</strong><small>공통 System 필요가 입증된 이후</small></div>
+          </div>
+          <footer>
+            이 페이지는 전체 계획을 검토하기 위한 공개 Preview입니다. Planned 서비스는 아직
+            생성되거나 운영 중인 것으로 간주하지 않습니다.
+          </footer>
+        </aside>
+      </section>
+
+      <section class="architecture-offer" id="offer">
+        <div class="arch-shell">
+          <div class="arch-heading" data-reveal>
+            <p class="eyebrow eyebrow-dark">RECOMMENDED COMMERCIAL ENTRY</p>
+            <h2>첫 Offer는 무료 상담이 아니라,<br /><em>유료 Discovery로 가는 선별 구조</em>입니다.</h2>
+            <p>
+              무료 단계에서 해답을 제공하거나 Scope를 대신 만들지 않습니다. 문제와 실행 가능성을
+              빠르게 확인하고, 가치가 있는 과제만 유료 Discovery로 전환합니다.
+            </p>
+          </div>
+
+          <ol class="offer-flow" data-reveal>
+            <li class="offer-free">
+              <span>00 / FREE</span>
+              <h3>사전 적합성 확인</h3>
+              <p>문제, 원하는 결과, Budget·일정 신호와 의사결정 가능성을 확인합니다.</p>
+              <strong>GO / HOLD / AI 불필요</strong>
+            </li>
+            <li class="offer-paid">
+              <span>01 / PAID</span>
+              <h3>AI/AX Discovery</h3>
+              <p>현재 업무와 병목을 분석하고 적용 판단, Scope, Risk, 필요 역할을 정의합니다.</p>
+              <strong>PROJECT BRIEF</strong>
+            </li>
+            <li>
+              <span>02 / DESIGN</span>
+              <h3>Scope · Team</h3>
+              <p>산출물, 검증 기준, 책임 범위와 Evidence 기반 실행팀을 설계합니다.</p>
+              <strong>TEAM PLAN</strong>
+            </li>
+            <li>
+              <span>03 / WORK</span>
+              <h3>계약 · Delivery</h3>
+              <p>계약과 보상을 명시하고 PM·QA를 포함한 유료 프로젝트로 실행합니다.</p>
+              <strong>DELIVERY</strong>
+            </li>
+            <li>
+              <span>04 / PROVE</span>
+              <h3>검증 · Evidence</h3>
+              <p>결과, 한계, Capability Gap과 다음 실행 단계를 기록합니다.</p>
+              <strong>VERIFIED RESULT</strong>
+            </li>
+          </ol>
+
+          <div class="discovery-contract" data-reveal>
+            <article>
+              <p>유료 Discovery 산출물 기준</p>
+              <ul>
+                <li>현재 업무·병목 Map</li>
+                <li>AI 적용 필요성 판단</li>
+                <li>실행 가능한 Project Brief</li>
+                <li>Scope·Risk·Verification 기준</li>
+                <li>필요 Role과 권장 Next Step</li>
+              </ul>
+            </article>
+            <aside>
+              <span>NOT DECIDED YET</span>
+              <strong>가격 · 진행 기간 · 접수 수단</strong>
+              <p>실제 고객 인터뷰와 계약 구조 검토 후 확정합니다.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="architecture-map-section" id="map">
+        <div class="arch-shell">
+          <div class="arch-heading arch-heading-light" data-reveal>
+            <p class="eyebrow">SERVICE MAP / ONE DOMAIN, ONE RESPONSIBILITY</p>
+            <h2>서브도메인은 메뉴가 아니라<br /><em>독립적인 제품·운영 경계</em>입니다.</h2>
+          </div>
+
+          <div class="architecture-map" data-reveal>
+            <article class="service-node node-www">
+              <header><span>LIVE</span><small>STATIC</small></header>
+              <p>FRONT DOOR</p>
+              <h3>www.hbkr.net</h3>
+              <code>net-hbkr-www-static</code>
+              <strong>브랜드 · 신뢰 · 양쪽 시장 유입</strong>
+            </article>
+
+            <div class="map-downlink" aria-hidden="true"><span></span><i>↓</i></div>
+
+            <div class="map-core-grid">
+              <section class="map-group map-commercial">
+                <header><span>REVENUE ENGINE</span><small>P0</small></header>
+                <article class="service-node node-work">
+                  <header><span>PLANNED</span><small>PLATFORM</small></header>
+                  <h3>work.hbkr.net</h3>
+                  <code>net-hbkr-work-platform</code>
+                  <strong>AI 인재 · AI 프로젝트 · Match</strong>
+                  <p>Talent과 Project를 한 Platform에서 동등하게 표현합니다.</p>
+                </article>
+                <article class="service-node node-ops">
+                  <header><span>PLANNED</span><small>SYSTEM</small></header>
+                  <h3>ops.hbkr.net</h3>
+                  <code>net-hbkr-ops-system</code>
+                  <strong>Discovery · 계약 · Delivery</strong>
+                  <p>민감한 상업 운영과 수동 Matching을 내부에서 관리합니다.</p>
+                </article>
+              </section>
+
+              <section class="map-group map-supply">
+                <header><span>PEOPLE + EVIDENCE</span><small>P1 — P2</small></header>
+                <article class="service-node node-cafe">
+                  <header><span>PLANNED</span><small>PLATFORM</small></header>
+                  <h3>cafe.hbkr.net</h3>
+                  <code>net-hbkr-cafe-platform</code>
+                  <strong>사람 · 모임 · Vertical Community</strong>
+                  <p>HungryBoxer의 커뮤니티 태도와 캠핑하는 프로그래머를 잇습니다.</p>
+                </article>
+                <div class="supply-pair">
+                  <article class="service-node node-learn">
+                    <header><span>PLANNED</span><small>PLATFORM</small></header>
+                    <h3>learn.hbkr.net</h3>
+                    <code>net-hbkr-learn-platform</code>
+                    <strong>AI/AX 학습 활동</strong>
+                  </article>
+                  <article class="service-node node-lab">
+                    <header><span>PLANNED</span><small>PLATFORM</small></header>
+                    <h3>lab.hbkr.net</h3>
+                    <code>net-hbkr-lab-platform</code>
+                    <strong>실험 · Field Test · Evidence</strong>
+                  </article>
+                </div>
+              </section>
+            </div>
+
+            <div class="map-feedback" aria-label="서비스 간 흐름">
+              <span>CAFE · LEARN · LAB</span>
+              <i>Evidence →</i>
+              <span>WORK</span>
+              <i>Project →</i>
+              <span>OPS</span>
+            </div>
+
+            <section class="map-foundation">
+              <header><span>SHARED FOUNDATION / CREATE ONLY WHEN TRIGGERED</span><small>P3</small></header>
+              <article class="service-node">
+                <header><span>LATER</span><small>SYSTEM</small></header>
+                <h3>api.hbkr.net</h3>
+                <code>net-hbkr-api-system</code>
+                <p>공통 데이터와 Integration Contract</p>
+              </article>
+              <article class="service-node">
+                <header><span>LATER</span><small>SYSTEM</small></header>
+                <h3>id.hbkr.net</h3>
+                <code>net-hbkr-id-system</code>
+                <p>통합 Identity와 Access Policy</p>
+              </article>
+              <article class="service-node">
+                <header><span>LATER</span><small>STATIC</small></header>
+                <h3>status.hbkr.net</h3>
+                <code>net-hbkr-status-static</code>
+                <p>유료 서비스 상태와 Incident 안내</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="repository-rule-section">
+        <div class="arch-shell repository-rule" data-reveal>
+          <div>
+            <p class="eyebrow eyebrow-dark">REPOSITORY CONTRACT</p>
+            <h2>net-hbkr-<em>서브도메인</em>-<strong>성격</strong></h2>
+          </div>
+          <div class="type-definitions">
+            <article><span>STATIC</span><p>읽기 중심, 로그인·DB 없음</p></article>
+            <article><span>PLATFORM</span><p>외부 사용자가 참여하고 데이터를 생성</p></article>
+            <article><span>SYSTEM</span><p>내부 운영 또는 공통 기반</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="architecture-data" id="data">
+        <div class="arch-shell">
+          <div class="arch-heading" data-reveal>
+            <p class="eyebrow eyebrow-dark">DATA OWNERSHIP / NO SHARED DATABASE FIRST</p>
+            <h2>데이터는 보이는 곳과<br /><em>책임지는 곳</em>을 분리합니다.</h2>
+            <p>
+              초기에는 성급한 공통 DB보다 하나의 Authoritative Source와 명시적인 전달을
+              선택합니다. 공개 Summary와 계약·개인정보 원본을 같은 Surface에 두지 않습니다.
+            </p>
+          </div>
+
+          <div class="data-lanes">
+            <article data-reveal>
+              <header><span>PUBLIC MARKET</span><small>WORK</small></header>
+              <h3>판단 가능한 공개 정보</h3>
+              <ul>
+                <li>Talent Profile</li>
+                <li>Project 공개 Brief</li>
+                <li>Evidence Index</li>
+                <li>Match Assessment View</li>
+              </ul>
+              <p>Member와 고객이 허용한 범위만 공개</p>
+            </article>
+            <article data-reveal>
+              <header><span>COMMERCIAL PRIVATE</span><small>OPS</small></header>
+              <h3>운영자가 책임지는 원본</h3>
+              <ul>
+                <li>Lead · Discovery</li>
+                <li>비공개 Project Brief</li>
+                <li>Proposal · Contract</li>
+                <li>Delivery · Settlement</li>
+              </ul>
+              <p>검색 차단, 인증·Role 확인 필수</p>
+            </article>
+            <article data-reveal>
+              <header><span>EVIDENCE SOURCE</span><small>LAB · CAFE · WORK</small></header>
+              <h3>근거의 원본과 동의</h3>
+              <ul>
+                <li>Experiment Result</li>
+                <li>Field Test</li>
+                <li>Project Deliverable</li>
+                <li>Peer Review</li>
+              </ul>
+              <p>Contributor·고객·IP 조건 확인 후 인용</p>
+            </article>
+            <article data-reveal>
+              <header><span>IDENTITY</span><small>WORK → ID LATER</small></header>
+              <h3>Member는 하나, 역할은 복수</h3>
+              <ul>
+                <li>Talent</li>
+                <li>Project Owner</li>
+                <li>Cafe Member</li>
+                <li>Lab Contributor</li>
+              </ul>
+              <p>기업·개인 중 하나로 영구 고정하지 않음</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="architecture-roadmap" id="roadmap">
+        <div class="arch-shell">
+          <div class="arch-heading arch-heading-light" data-reveal>
+            <p class="eyebrow">REVENUE-FIRST ROADMAP / EXIT CRITERIA, NOT CALENDAR</p>
+            <h2>기간이 아니라<br /><em>실제 수요와 반복</em>으로 다음 단계를 엽니다.</h2>
+          </div>
+
+          <ol class="architecture-stages" data-reveal>
+            <li class="stage-current">
+              <span>STAGE 0 / CURRENT</span>
+              <h3>WWW + Intake</h3>
+              <p>Offer와 두 접수 기준을 확정하고 실제 Lead를 받습니다.</p>
+              <strong>Exit: 접수 → Operator 확인 → Next Step</strong>
+            </li>
+            <li class="stage-next">
+              <span>STAGE 1 / NEXT</span>
+              <h3>수동 수익 운영</h3>
+              <p>Discovery, Talent Search, Shortlist, Proposal을 직접 수행합니다.</p>
+              <strong>Exit: Brief 3건 + 유료 계약 또는 실패 근거</strong>
+            </li>
+            <li>
+              <span>STAGE 2</span>
+              <h3>Work Platform</h3>
+              <p>실제 Talent·Project와 Match Assessment를 제품화합니다.</p>
+              <strong>Trigger: 반복 가능한 시장 데이터</strong>
+            </li>
+            <li>
+              <span>STAGE 3</span>
+              <h3>Ops System</h3>
+              <p>누락과 협업 비용이 발생한 운영 Workflow를 시스템화합니다.</p>
+              <strong>Trigger: Lead 5+ 또는 Operator 2+</strong>
+            </li>
+            <li>
+              <span>STAGE 4</span>
+              <h3>HBKR Cafe</h3>
+              <p>실제 Meetup과 Vertical Community의 사람·활동을 연결합니다.</p>
+              <strong>Trigger: 정기 활동 + 운영 책임자</strong>
+            </li>
+            <li>
+              <span>STAGE 5</span>
+              <h3>Lab · Learn</h3>
+              <p>반복 실험과 학습 활동을 Evidence 생산 체계로 분리합니다.</p>
+              <strong>Trigger: Experiment 3+ / Session 2+</strong>
+            </li>
+            <li>
+              <span>STAGE 6</span>
+              <h3>API · ID · Status</h3>
+              <p>중복 데이터, 통합 로그인, 유료 운영 필요가 입증되면 만듭니다.</p>
+              <strong>Trigger: Shared System 비용이 분리 비용보다 큼</strong>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="architecture-decisions">
+        <div class="arch-shell decision-grid">
+          <article class="decided-panel" data-reveal>
+            <header><span>DECIDED</span><strong>현재 기준선</strong></header>
+            <ul>
+              <li>무료 적합성 확인 → 유료 Discovery</li>
+              <li>Talent과 Project는 `work`에서 통합</li>
+              <li>초기 Matching은 Operator가 직접 작성</li>
+              <li>Community 이름은 HBKR Cafe</li>
+              <li>한 Member가 복수 Role 보유</li>
+              <li>HungryBoxer는 역사로 보존</li>
+            </ul>
+          </article>
+          <article class="open-panel" data-reveal>
+            <header><span>OPEN</span><strong>다음 결정</strong></header>
+            <ul>
+              <li>Project·Talent Intake 수단</li>
+              <li>유료 Discovery 가격과 기간</li>
+              <li>계약 주체와 수익 구조</li>
+              <li>공개 Inventory와 개인정보 범위</li>
+              <li>각 Platform의 Framework와 Hosting</li>
+              <li>루트 hbkr.net Redirect와 DNS</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="assets/hbkr-mark.svg" alt="" width="44" height="44" />
+        <p><strong>HBKR</strong><span>Service Architecture Preview</span></p>
+      </div>
+      <a class="footer-link" href="index.html">AI/AX Landing으로 돌아가기 ↗</a>
+      <p>© <span data-year></span> HBKR. Planning baseline.</p>
+    </footer>
+  </body>
+</html>

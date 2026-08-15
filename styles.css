@@ -1703,6 +1703,26 @@ ol {
   margin-bottom: 60px;
 }
 
+.architecture-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--orange);
+  font-weight: 700;
+}
+
+.architecture-link span {
+  color: var(--orange);
+  transition: transform 160ms ease;
+}
+
+.architecture-link:hover span,
+.architecture-link:focus-visible span {
+  transform: translateX(5px);
+}
+
 .ecosystem-flow {
   display: grid;
 
@@ -1870,7 +1890,6 @@ ol {
 
 /* =========================
    BOUNDARY
-========================= */
 
 .boundary-section {
   display: grid;
@@ -2007,7 +2026,8 @@ ol {
   font-size: 0.9rem;
 }
 
-.start-paths article > strong {
+.start-paths article > strong,
+.start-paths article > a {
   margin-top: auto;
 
   padding-top: 15px;
@@ -2015,6 +2035,23 @@ ol {
   border-top: 1px solid rgba(11, 32, 25, 0.3);
 
   font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.start-paths article > a {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.start-paths article > a span {
+  margin: 0;
+  transition: transform 160ms ease;
+}
+
+.start-paths article > a:hover span,
+.start-paths article > a:focus-visible span {
+  transform: translateX(4px);
 }
 
 /* =========================
@@ -2046,6 +2083,17 @@ ol {
 
 .site-footer p {
   margin: 0;
+}
+
+.footer-link {
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 253, 246, 0.38);
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--lime);
+  border-color: var(--lime);
 }
 
 .footer-brand {
@@ -2598,85 +2646,3 @@ ol {
 
 /* =========================
    REDUCED MOTION
-========================= */
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-
-    animation-iteration-count: 1 !important;
-
-    transition-duration: 0.01ms !important;
-  }
-
-  [data-reveal] {
-    opacity: 1;
-
-    transform: none;
-  }
-}
-:root {
-  --ink: #0b2019;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.button:hover {
-  transform: translateY(-3px);
-}
-/* =========================
-   MOBILE MENU LOCK
-========================= */
-
-body.menu-open {
-  overflow: hidden;
-}
-
-
-/* =========================
-   ACTIVE NAV LINK
-========================= */
-
-.site-nav a.is-active:not(.nav-cta) {
-  color: var(--lime);
-}
-
-.site-nav a.is-active:not(.nav-cta)::after {
-  transform: scaleX(1);
-}
-
-
-/* =========================
-   BETTER KEYBOARD FOCUS
-========================= */
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--lime);
-  outline-offset: 4px;
-}
-
-
-/* =========================
-   MOBILE MENU IMPROVEMENT
-========================= */
-
-@media (max-width: 900px) {
-  .site-nav a.is-active:not(.nav-cta) {
-    color: var(--lime);
-  }
-
-  .site-nav a.is-active:not(.nav-cta)::after {
-    display: none;
-  }
-}
