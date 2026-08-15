@@ -1,36 +1,50 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta
       name="description"
-      content="HBKR은 AI/AX 과제를 가진 조직과 검증 가능한 실행자를 연결해 과제 정의, 팀 구성, 구현, 검증까지 이어가는 AI/AX 프로젝트 실행 네트워크입니다."
+      content="HBKR helps organizations turn AI ideas into practical, measurable systems through discovery, AI/AX design, execution, and verification."
     />
+
     <meta name="theme-color" content="#0b2019" />
-    <link rel="canonical" href="https://www.hbkr.net/" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.hbkr.net/" />
-    <meta property="og:title" content="HBKR | AI/AX 프로젝트 실행 네트워크" />
+    <meta property="og:title" content="HBKR | AI Systems That Actually Work" />
     <meta
       property="og:description"
-      content="AI를 이야기에서 끝내지 않고, 실제 업무의 변화로 연결합니다."
+      content="Turn AI ideas into working systems. Discover the problem, build the right solution, and prove the result."
     />
-    <title>HBKR | AI/AX 프로젝트 실행 네트워크</title>
+
+    <title>HBKR | AI Systems That Actually Work</title>
+
     <link rel="icon" href="assets/hbkr-mark.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
+
     <script src="app.js" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">본문으로 바로가기</a>
 
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="HBKR 홈">
-        <img src="assets/hbkr-mark.svg" alt="" width="40" height="40" />
+      <a class="brand" href="#top" aria-label="HBKR Home">
+        <img
+          src="assets/hbkr-mark.svg"
+          alt=""
+          width="40"
+          height="40"
+        />
+
         <span>
           <strong>HBKR</strong>
-          <small>AI/AX 실행 네트워크</small>
+          <small>AI SYSTEMS & EXECUTION</small>
         </span>
       </a>
 
@@ -41,522 +55,958 @@
         aria-controls="primary-navigation"
         data-menu-toggle
       >
-        <span>메뉴</span>
+        <span>Menu</span>
         <i aria-hidden="true"></i>
       </button>
 
-      <nav class="site-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
-        <a href="#business">기업·프로젝트</a>
-        <a href="#capabilities">AI 도입·개발 과제</a>
-        <a href="#network">AI 실무자 찾기</a>
-        <a href="#evidence">수행 근거</a>
-        <a href="https://work.hbkr.net/">인재·프로젝트</a>
-        <a href="architecture.html">전체 구조</a>
-        <a class="nav-cta" href="#start">시작하기</a>
+      <nav
+        class="site-nav"
+        id="primary-navigation"
+        aria-label="Primary navigation"
+        data-menu
+      >
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#evidence">Evidence</a>
+        <a class="nav-cta" href="#start">Start a Project</a>
       </nav>
     </header>
 
     <main id="main">
+
+      <!-- =========================
+           HERO
+      ========================== -->
       <section class="hero" id="top">
+
         <div class="hero-grid" aria-hidden="true"></div>
+
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow"><span></span> AI/AX 프로젝트 실행 네트워크</p>
-          <h1>
-            AI를 이야기에서<br />
-            끝내지 않고,<br />
-            <em>업무의 변화로.</em>
-          </h1>
-          <p class="hero-intro">
-            HBKR은 AI/AX 과제를 가진 조직과 검증 가능한 실행자를 연결합니다.
-            무엇을 바꿀지 정의하는 단계부터 팀 구성, 구현, 현장 검증까지 이어갑니다.
+          <p class="eyebrow">
+            <span></span>
+            AI SYSTEMS · AUTOMATION · EXECUTION
           </p>
-          <div class="hero-actions" aria-label="HBKR 시작하기">
-            <a class="button button-primary" href="https://work.hbkr.net/#projects">
-              <span>기업·프로젝트</span>
-              <strong>AI/AX 프로젝트 상담</strong>
+
+          <h1>
+            Turn AI ideas
+            <br />
+            into
+            <br />
+            <em>working systems.</em>
+          </h1>
+
+          <p class="hero-intro">
+            HBKR helps businesses move from AI experiments to practical
+            systems that solve real problems, improve workflows, and create
+            measurable results.
+          </p>
+
+          <div class="hero-actions" aria-label="Get started">
+            <a class="button button-primary" href="#start">
+              <span>FOR BUSINESS</span>
+              <strong>Start a Project</strong>
             </a>
-            <a class="button button-secondary" href="https://work.hbkr.net/#talent">
-              <span>전문가·빌더</span>
-              <strong>AI/AX 실행자 참여</strong>
+
+            <a class="button button-secondary" href="#services">
+              <span>EXPLORE</span>
+              <strong>What We Build</strong>
             </a>
           </div>
-          <ul class="hero-principles" aria-label="HBKR 운영 원칙">
-            <li>문제부터 확인</li>
-            <li>Manual 수행팀 구성</li>
-            <li>실제 수행 근거로 판단</li>
+
+          <ul class="hero-principles" aria-label="HBKR principles">
+            <li>Problem First</li>
+            <li>Build With Purpose</li>
+            <li>Measure The Result</li>
           </ul>
         </div>
 
-        <aside class="execution-console" aria-label="AI/AX 실행 흐름" data-reveal>
+        <aside
+          class="execution-console"
+          aria-label="HBKR execution model"
+          data-reveal
+        >
           <header>
+            <p>FROM IDEA TO OUTCOME</p>
+            <span>EXECUTION MODEL / 01</span>
             <p>문의에서 실제 결과까지</p>
             <span>진행 방식 / 예시</span>
           </header>
+
           <div class="console-question">
+            <small>STARTING POINT</small>
+
+            <strong>
+              “Where can AI create a real advantage for your business?”
+            </strong>
             <small>고객이 처음 묻는 것</small>
             <strong>“우리 업무의 어디를 AI로 바꿔야 하는가?”</strong>
           </div>
+
           <ol>
             <li>
               <span>01</span>
+
+              <div>
+                <small>DISCOVER</small>
+                <strong>Understand the problem and workflow.</strong>
+              </div>
               <div><small>현재 업무 확인</small><strong>현재 업무와 병목을 읽습니다.</strong></div>
             </li>
+
             <li>
               <span>02</span>
-              <div><small>적용 방법 정리</small><strong>AI가 필요한지부터 판단합니다.</strong></div>
+
+              <div>
+                <small>DESIGN</small>
+                <strong>Choose the right AI approach.</strong>
+              </div>
             </li>
+
             <li>
               <span>03</span>
-              <div><small>수행팀 구성</small><strong>필요 역할과 책임을 구성합니다.</strong></div>
+
+              <div>
+                <small>BUILD</small>
+                <strong>Turn the idea into a usable system.</strong>
+              </div>
             </li>
+
             <li>
               <span>04</span>
-              <div><small>구현하고 검증</small><strong>결과와 한계를 함께 증명합니다.</strong></div>
+
+              <div>
+                <small>VERIFY</small>
+                <strong>Measure results and improve.</strong>
+              </div>
             </li>
           </ol>
+
           <footer>
-            <span>정리되는 결과</span>
-            <strong>과제 범위 · 수행팀 · 검증 방법</strong>
+            <span>OUTPUT</span>
+            <strong>AI Strategy · Working System · Evidence</strong>
           </footer>
         </aside>
       </section>
 
-      <div class="signal-strip" aria-label="현재 운영 방향">
-        <p><span>NOW</span> 초기 프로젝트는 자동 매칭이 아닌 운영자 주도 방식으로 설계합니다.</p>
-        <p><span>RULE</span> AI 도입 자체보다 측정 가능한 업무 변화를 먼저 봅니다.</p>
+
+      <!-- =========================
+           SIGNAL STRIP
+      ========================== -->
+      <div class="signal-strip" aria-label="HBKR approach">
+        <p>
+          <span>FOCUS</span>
+          We start with the business problem, not the AI tool.
+        </p>
+
+        <p>
+          <span>OUTCOME</span>
+          Every project should lead to something useful, measurable, and real.
+        </p>
       </div>
 
-      <section class="service-launchpad" aria-labelledby="service-launchpad-title">
-        <header data-reveal>
-          <p class="eyebrow eyebrow-dark">HBKR 전체 화면 보기</p>
-          <h2 id="service-launchpad-title">하나의 소개 페이지가 아니라,<br><em>연결된 실행 환경</em>을 봅니다.</h2>
-          <p>각 화면은 현재 구조와 사용자 경험을 검토하기 위한 독립 prototype입니다. 실제 계정·거래·운영 데이터는 연결되지 않았습니다.</p>
-        </header>
-        <div class="service-launchpad-grid" data-reveal>
-          <a href="https://work.hbkr.net/"><span>01 / CORE MARKET</span><h3>WORK</h3><p>AI 실무자 · AI 프로젝트 · 추천 이유</p><strong>OPEN ↗</strong></a>
-          <a href="https://cafe.hbkr.net/"><span>02 / COMMUNITY</span><h3>CAFE</h3><p>HungryBoxer · 캠핑하는 프로그래머 · 활동 기록</p><strong>OPEN ↗</strong></a>
-          <a href="https://learn.hbkr.net/"><span>03 / AI 실습</span><h3>LEARN</h3><p>기초 실습 · 업무 적용 · 직접 만들기</p><strong>OPEN ↗</strong></a>
-          <a href="https://lab.hbkr.net/"><span>04 / 직접 실험</span><h3>LAB</h3><p>가설 · 현장 검증 · 결과 기록</p><strong>OPEN ↗</strong></a>
-        </div>
-        <nav class="system-launchpad" aria-label="HBKR 시스템 prototype">
-          <span>업무 화면</span><a href="https://ops.hbkr.net/">OPS</a><a href="https://id.hbkr.net/">ID</a><a href="https://api.hbkr.net/">API</a><a href="https://status.hbkr.net/">STATUS</a><a href="architecture.html">SYSTEM MAP</a>
-        </nav>
-      </section>
 
+      <!-- =========================
+           PROBLEM / BUSINESS
+      ========================== -->
       <section class="section problem-section" id="business">
+
         <div class="section-index" data-reveal>
           <span>01</span>
-          <p>기업이 겪는 문제</p>
+          <p>THE PROBLEM</p>
         </div>
+
         <div class="section-main">
+
           <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow-dark">기업·프로젝트 담당자를 위해</p>
-            <h2>AI 도입보다 어려운 것은<br /><em>AX를 실제로 실행하는 일</em>입니다.</h2>
+            <p class="eyebrow eyebrow-dark">
+              WHY AI PROJECTS FAIL
+            </p>
+
+            <h2>
+              AI is easy to talk about.
+              <br />
+              <em>Execution is the hard part.</em>
+            </h2>
+
             <p>
-              도구는 빠르게 늘지만, 조직의 문제를 실행 가능한 AI/AX 과제로 바꾸고
-              적합한 역할을 모아 운영까지 연결하는 일은 여전히 어렵습니다.
+              Businesses do not need another AI demo. They need solutions
+              that fit their workflows, data, people, systems, and actual
+              business goals.
             </p>
           </div>
 
           <div class="problem-grid">
+
             <article data-reveal>
               <span>01</span>
-              <h3>과제가 모호합니다</h3>
-              <p>“AI를 도입하자”는 방향만 있고 어떤 업무와 결과를 바꿀지 정해지지 않습니다.</p>
+              <h3>The problem is unclear</h3>
+              <p>
+                “We need AI” is not a project. We first identify the workflow,
+                bottleneck, and outcome that actually matter.
+              </p>
             </article>
+
             <article data-reveal>
               <span>02</span>
-              <h3>사람을 검증하기 어렵습니다</h3>
-              <p>이력의 기술 키워드만으로 실제 문제 해결 경험과 책임 범위를 판단하기 어렵습니다.</p>
+              <h3>The wrong solution gets built</h3>
+              <p>
+                AI agents, RAG, automation, and custom models are tools.
+                We choose the technology only after understanding the problem.
+              </p>
             </article>
+
             <article data-reveal>
               <span>03</span>
-              <h3>PoC가 운영으로 가지 못합니다</h3>
-              <p>데이터, 기존 시스템, 보안, 현업 의사결정 조건이 뒤늦게 드러납니다.</p>
+              <h3>Prototypes never reach production</h3>
+              <p>
+                Real systems have users, permissions, data, integrations,
+                security, maintenance, and operational constraints.
+              </p>
             </article>
+
             <article data-reveal>
               <span>04</span>
-              <h3>필요한 역할이 하나가 아닙니다</h3>
-              <p>AI 모델뿐 아니라 제품, 데이터, 연동, 운영, 도메인 역할이 함께 필요합니다.</p>
+              <h3>Success is never measured</h3>
+              <p>
+                A working demo is not enough. We define what improvement
+                should look like and test against it.
+              </p>
             </article>
+
           </div>
 
           <blockquote class="position-statement" data-reveal>
-            <p>HBKR은 AI를 먼저 판매하지 않습니다.</p>
-            <strong>현재 업무와 원하는 결과를 먼저 읽고, AI가 필요한지부터 판단합니다.</strong>
+            <p>We do not sell AI for the sake of AI.</p>
+
+            <strong>
+              We find where technology can create a meaningful change in the
+              way your business works.
+            </strong>
           </blockquote>
+
         </div>
       </section>
 
-      <section class="section brief-section" aria-labelledby="brief-title">
-        <div class="section-index section-index-light" data-reveal>
-          <span>02</span>
-          <p>과제 사전 정리</p>
-        </div>
-        <div class="section-main">
-          <div class="section-heading section-heading-light" data-reveal>
-            <p class="eyebrow">기술보다 현재 업무부터 확인합니다</p>
-            <h2 id="brief-title">기술 스택이 아니라<br />바꾸고 싶은 업무를 가져오세요.</h2>
-          </div>
 
-          <div class="brief-exchange" data-reveal>
-            <article class="brief-input">
-              <header><span>INPUT</span><strong>조직이 알려줄 것</strong></header>
-              <ul>
-                <li><span>01</span>현재 업무와 반복되는 병목</li>
-                <li><span>02</span>원하는 결과와 성공 기준</li>
-                <li><span>03</span>보유 Data · System · 보유 자료</li>
-                <li><span>04</span>예산 · 기간 · 계약 조건</li>
-                <li><span>05</span>현재 팀 · 의사결정권 · 보안 조건</li>
-              </ul>
-            </article>
-            <div class="exchange-arrow" aria-hidden="true"><span>HBKR</span><i>→</i></div>
-            <article class="brief-output">
-              <header><span>정리되는 결과</span><strong>함께 정의할 것</strong></header>
-              <ul>
-                <li><span>01</span>AI/AX 적용 필요성 판단</li>
-                <li><span>02</span>문제 정의와 실행 가능한 Scope</li>
-                <li><span>03</span>필요 역할 · 할 수 있는 일 · 책임 범위</li>
-                <li><span>04</span>산출물 · 검증 방법 · 위험 조건</li>
-                <li><span>05</span>팀 구성안과 권장 Next Step</li>
-              </ul>
-            </article>
-          </div>
-          <p class="brief-note" data-reveal>
-            고객이 Automation, RAG, Agent 같은 해법을 미리 결정할 필요는 없습니다.
-            AI가 불필요한 문제라면 그 판단도 결과에 포함합니다.
-          </p>
-        </div>
-      </section>
+      <!-- =========================
+           SERVICES
+      ========================== -->
+      <section
+        class="section capability-section"
+        id="services"
+      >
 
-      <section class="section capability-section" id="capabilities">
         <div class="section-index" data-reveal>
-          <span>03</span>
-          <p>AI 도입·개발 과제 예시</p>
+          <span>02</span>
+          <p>WHAT WE BUILD</p>
         </div>
+
         <div class="section-main">
+
           <div class="section-heading heading-split" data-reveal>
+
             <div>
-              <p class="eyebrow eyebrow-dark">어떤 일을 함께할 수 있나</p>
-              <h2>기술 이름이 아니라<br /><em>변화의 단위</em>로 봅니다.</h2>
+              <p class="eyebrow eyebrow-dark">
+                AI / AUTOMATION / PRODUCTS
+              </p>
+
+              <h2>
+                We build around
+                <br />
+                <em>business outcomes.</em>
+              </h2>
             </div>
+
             <p>
-              아래 영역은 확정된 상품 목록이 아니라 초기 AI/AX 프로젝트를 분류하고
-              필요한 실행 역할을 찾기 위한 기준입니다.
+              Every project is different. These are the core areas where
+              we help teams turn AI opportunities into working systems.
             </p>
+
           </div>
+
 
           <div class="capability-grid">
+
             <article data-reveal>
-              <header><span>01</span><small>업무 흐름</small></header>
-              <h3>업무 자동화</h3>
-              <p>반복 업무, 문서 처리, 승인과 전달 흐름을 줄이고 사람이 판단할 지점을 명확히 합니다.</p>
-              <footer>Automation · Integration · Human-in-the-loop</footer>
+              <header>
+                <span>01</span>
+                <small>AUTOMATION</small>
+              </header>
+
+              <h3>AI Automation</h3>
+
+              <p>
+                Automate repetitive workflows, document processing,
+                approvals, operations, and human handoffs.
+              </p>
+
+              <footer>
+                Workflows · Integrations · Human-in-the-loop
+              </footer>
             </article>
+
+
             <article data-reveal>
-              <header><span>02</span><small>KNOWLEDGE</small></header>
-              <h3>지식 검색 · RAG</h3>
-              <p>흩어진 문서와 사내 지식을 검색 가능한 답변 체계로 바꾸고 근거와 권한을 설계합니다.</p>
-              <footer>Data · Retrieval · Evaluation · Security</footer>
+              <header>
+                <span>02</span>
+                <small>KNOWLEDGE</small>
+              </header>
+
+              <h3>RAG & Knowledge Systems</h3>
+
+              <p>
+                Turn internal documents and business knowledge into
+                searchable, useful, and controlled AI experiences.
+              </p>
+
+              <footer>
+                Retrieval · Data · Evaluation · Security
+              </footer>
             </article>
+
+
             <article data-reveal>
-              <header><span>03</span><small>AGENT</small></header>
-              <h3>AI Agent · AgentOps</h3>
-              <p>도구를 사용하는 Agent와 관찰, 평가, 통제, 비용, 장애 대응까지 운영 구조를 만듭니다.</p>
-              <footer>Agent Design · 사용 기술s · Evals · AgentOps</footer>
+              <header>
+                <span>03</span>
+                <small>AGENTS</small>
+              </header>
+
+              <h3>AI Agents</h3>
+
+              <p>
+                Design AI systems that can reason, use tools, execute tasks,
+                and operate inside real business workflows.
+              </p>
+
+              <footer>
+                Agent Design · Tools · Evals · AgentOps
+              </footer>
             </article>
+
+
             <article data-reveal>
-              <header><span>04</span><small>PRODUCT</small></header>
-              <h3>AI 제품 개발</h3>
-              <p>AI 기능을 데모가 아닌 제품 경험으로 설계하고 기존 서비스와 연결해 사용성을 검증합니다.</p>
-              <footer>Product · Backend · Frontend · AI UX</footer>
+              <header>
+                <span>04</span>
+                <small>PRODUCT</small>
+              </header>
+
+              <h3>AI Products</h3>
+
+              <p>
+                Build AI-powered products and features that people can
+                actually use instead of stopping at a prototype.
+              </p>
+
+              <footer>
+                Product · Backend · Frontend · AI UX
+              </footer>
             </article>
+
+
             <article data-reveal>
-              <header><span>05</span><small>FOUNDATION</small></header>
-              <h3>Data · System 연동</h3>
-              <p>AI가 실제로 작동하도록 데이터 품질, API, 기존 시스템, 접근 권한과 로그를 연결합니다.</p>
-              <footer>Data Engineering · API · Infra · Governance</footer>
+              <header>
+                <span>05</span>
+                <small>DATA</small>
+              </header>
+
+              <h3>Data & Integrations</h3>
+
+              <p>
+                Connect AI systems to APIs, databases, existing software,
+                internal tools, and the data they actually need.
+              </p>
+
+              <footer>
+                APIs · Data Engineering · Infrastructure
+              </footer>
             </article>
+
+
             <article data-reveal>
-              <header><span>06</span><small>ADOPTION</small></header>
-              <h3>현업 적용 · 검증</h3>
-              <p>사용자 행동과 업무 지표를 관찰하고 교육, 운영 절차, 실패 경계를 함께 조정합니다.</p>
-              <footer>AX · 현장 검증 · Enablement · Validation</footer>
+              <header>
+                <span>06</span>
+                <small>STRATEGY</small>
+              </header>
+
+              <h3>AI Strategy</h3>
+
+              <p>
+                Identify where AI makes sense, prioritize opportunities,
+                define the roadmap, and avoid expensive technology mistakes.
+              </p>
+
+              <footer>
+                Discovery · Roadmaps · AI/AX · Validation
+              </footer>
             </article>
+
           </div>
         </div>
       </section>
 
-      <section class="execution-section" aria-labelledby="execution-title">
+
+      <!-- =========================
+           PROCESS
+      ========================== -->
+      <section
+        class="execution-section"
+        id="process"
+        aria-labelledby="execution-title"
+      >
+
         <div class="execution-heading" data-reveal>
-          <p class="eyebrow">초기 운영 방식</p>
-          <h2 id="execution-title">처음부터 매칭 알고리즘을 만들지 않습니다.</h2>
-          <p>
-            실제 유료 과제에서 고객의 언어, 예산, 역할 조합, 실패 원인과 계약 판단에
-            영향을 주는 수행 근거를 먼저 학습합니다.
+
+          <p class="eyebrow">
+            HOW WE WORK
           </p>
+
+          <h2 id="execution-title">
+            From messy problem
+            <br />
+            to working system.
+          </h2>
+
+          <p>
+            We keep the process simple: understand the problem, design the
+            right solution, build it, put it in front of users, and measure
+            what happened.
+          </p>
+
         </div>
+
 
         <ol class="delivery-flow" data-reveal>
-          <li><span>01</span><strong>현재 업무 확인</strong><small>문제 · 현재 업무 · 목표</small></li>
-          <li><span>02</span><strong>AX 적용 방법 정리</strong><small>적용 판단 · Scope · Risk</small></li>
-          <li><span>03</span><strong>TEAM</strong><small>역할 · 책임 · 수행 근거</small></li>
-          <li><span>04</span><strong>BUILD</strong><small>구현 · 연동 · PM · QA</small></li>
-          <li><span>05</span><strong>VERIFY</strong><small>결과 · Gap · Next Step</small></li>
+
+          <li>
+            <span>01</span>
+            <strong>DISCOVER</strong>
+            <small>
+              Problem · Workflow · Goals
+            </small>
+          </li>
+
+          <li>
+            <span>02</span>
+            <strong>DESIGN</strong>
+            <small>
+              Strategy · Scope · Architecture
+            </small>
+          </li>
+
+          <li>
+            <span>03</span>
+            <strong>BUILD</strong>
+            <small>
+              Product · Automation · AI
+            </small>
+          </li>
+
+          <li>
+            <span>04</span>
+            <strong>DEPLOY</strong>
+            <small>
+              Users · Systems · Operations
+            </small>
+          </li>
+
+          <li>
+            <span>05</span>
+            <strong>VERIFY</strong>
+            <small>
+              Results · Feedback · Iteration
+            </small>
+          </li>
+
         </ol>
+
 
         <div class="operating-model" data-reveal>
+
           <article>
             <p>HBKR</p>
-            <h3>AI 실무자 찾기</h3>
-            <span>실행자 발굴 · 할 수 있는 일 · 수행 근거 · 수행팀 구성</span>
+            <h3>AI Execution</h3>
+            <span>
+              Strategy · Product · AI · Automation · Delivery
+            </span>
           </article>
+
           <div aria-hidden="true">×</div>
+
           <article>
-            <p>DreamLabs</p>
-            <h3>Commercial 개발·수행</h3>
-            <span>사전 진단 · 견적 · 계약 · PM · QA · 정산</span>
+            <p>YOUR BUSINESS</p>
+            <h3>Real Problems</h3>
+            <span>
+              Data · People · Systems · Goals · Constraints
+            </span>
           </article>
+
         </div>
+
+
         <p class="model-caveat" data-reveal>
-          위 구조는 초기 운영 가설입니다. 계약 주체, 책임 범위와 관련 법률·세무 조건은
-          실제 상업 운영 전에 별도로 확정합니다.
+          The goal is not to add AI everywhere. The goal is to find where
+          AI can create a real advantage and build the smallest useful
+          system that proves it.
         </p>
+
       </section>
 
-      <section class="section network-section" id="network">
+
+      <!-- =========================
+           WORK
+      ========================== -->
+      <section
+        class="section network-section"
+        id="work"
+      >
+
         <div class="section-index" data-reveal>
-          <span>04</span>
-          <p>AI 실무자 연결</p>
+          <span>03</span>
+          <p>SELECTED WORK</p>
         </div>
+
         <div class="section-main">
+
           <div class="section-heading heading-split" data-reveal>
+
             <div>
-              <p class="eyebrow eyebrow-dark">AI/AX 실무자를 위해</p>
-              <h2>직함보다<br /><em>실행 가능한 역할</em>을 봅니다.</h2>
+              <p class="eyebrow eyebrow-dark">
+                BUILD · TEST · LEARN
+              </p>
+
+              <h2>
+                Ideas are cheap.
+                <br />
+                <em>Working systems are not.</em>
+              </h2>
             </div>
+
             <p>
-              개발자만을 뜻하지 않습니다. 문제 정의부터 제품, 데이터, 운영과 현장 적용까지
-              AI/AX 결과에 책임질 수 있는 여러 역할을 연결합니다.
+              We use real projects and experiments to test what works,
+              what fails, and what is actually worth building.
             </p>
+
           </div>
 
-          <div class="role-marquee" aria-label="AI/AX 실행 역할" data-reveal>
-            <span>AI/AX Strategist</span>
-            <span>AI Architect</span>
-            <span>AI Product 만드는 사람</span>
-            <span>AgentOps Engineer</span>
-            <span>Data · Backend</span>
-            <span>Frontend · AI UX</span>
-            <span>Domain Specialist</span>
-            <span>Adoption · Field Ops</span>
-          </div>
 
           <div class="talent-sides">
+
             <article class="talent-offer" data-reveal>
-              <header><span>PROVIDES</span><h3>실행자가 보여줄 것</h3></header>
+
+              <header>
+                <span>PROJECT 01</span>
+                <h3>AI Workflow Automation</h3>
+              </header>
+
               <ul>
-                <li><strong>할 수 있는 일</strong><span>어떤 문제와 역할을 책임질 수 있는가</span></li>
-                <li><strong>결과물</strong><span>어떤 결과와 산출물을 제공하는가</span></li>
-                <li><strong>수행 근거</strong><span>무엇을 만들고 어떻게 검증했는가</span></li>
-                <li><strong>투입 가능 시점</strong><span>언제, 얼마나 참여할 수 있는가</span></li>
-                <li><strong>비용 · Mode</strong><span>비용과 자문·파트·프로젝트 참여 방식</span></li>
+                <li>
+                  <strong>PROBLEM</strong>
+                  <span>
+                    Repetitive manual work across multiple tools.
+                  </span>
+                </li>
+
+                <li>
+                  <strong>APPROACH</strong>
+                  <span>
+                    AI-assisted workflow with automated routing and review.
+                  </span>
+                </li>
+
+                <li>
+                  <strong>OUTPUT</strong>
+                  <span>
+                    Working automation prototype and measurable workflow.
+                  </span>
+                </li>
               </ul>
+
             </article>
+
+
             <article class="talent-seeks" data-reveal>
-              <header><span>SEEKS</span><h3>실행자가 확인할 것</h3></header>
+
+              <header>
+                <span>PROJECT 02</span>
+                <h3>Business Knowledge Assistant</h3>
+              </header>
+
               <ul>
-                <li><strong>Preferred Project</strong><span>어떤 문제와 도메인을 선호하는가</span></li>
-                <li><strong>역할 Scope</strong><span>어디까지 책임지고 결정할 수 있는가</span></li>
-                <li><strong>Conditions</strong><span>팀, 데이터, 시스템, 의사결정 조건은 무엇인가</span></li>
-                <li><strong>맡지 않는 범위</strong><span>참여하지 않을 문제와 위험은 무엇인가</span></li>
-                <li><strong>근거 확인</strong><span>계약 전에 추가로 확인할 것은 무엇인가</span></li>
+                <li>
+                  <strong>PROBLEM</strong>
+                  <span>
+                    Important company knowledge spread across documents.
+                  </span>
+                </li>
+
+                <li>
+                  <strong>APPROACH</strong>
+                  <span>
+                    Retrieval-based AI system with source-aware answers.
+                  </span>
+                </li>
+
+                <li>
+                  <strong>OUTPUT</strong>
+                  <span>
+                    Searchable knowledge experience with evaluation.
+                  </span>
+                </li>
               </ul>
+
             </article>
+
           </div>
+
         </div>
       </section>
 
-      <section class="section evidence-section" id="evidence">
+
+      <!-- =========================
+           EVIDENCE
+      ========================== -->
+      <section
+        class="section evidence-section"
+        id="evidence"
+      >
+
         <div class="section-index section-index-light" data-reveal>
-          <span>05</span>
-          <p>순위보다 실제 수행 근거</p>
+          <span>04</span>
+          <p>EVIDENCE</p>
         </div>
+
         <div class="section-main evidence-layout">
+
           <div class="section-heading section-heading-light" data-reveal>
-            <p class="eyebrow">직접 적은 경력은 시작일 뿐, 검증은 별도입니다</p>
-            <h2>점수보다<br />판단 근거를 남깁니다.</h2>
-            <p>
-              HBKR의 수행 근거는 사람을 한 줄로 순위화하기 위한 것이 아닙니다.
-              어떤 조건에서 어떤 역할을 맡아 무엇을 만들고 검증했는지 보여주기 위한 기록입니다.
+
+            <p class="eyebrow">
+              PROVE IT
             </p>
+
+            <h2>
+              Don't just tell us
+              <br />
+              what AI can do.
+              <br />
+              <em>Show us.</em>
+            </h2>
+
+            <p>
+              A polished demo is not proof. We care about what was built,
+              where it was used, what changed, and what still needs work.
+            </p>
+
           </div>
+
 
           <div class="evidence-board" data-reveal>
+
             <header>
-              <p>할 수 있는 일 RECORD / EXAMPLE</p>
+              <p>PROJECT EVIDENCE / EXAMPLE</p>
               <span>NOT A SCORE</span>
             </header>
+
+
             <div class="evidence-row">
-              <strong>Python</strong><span class="tag tag-self">본인이 입력</span>
+              <strong>Prototype</strong>
+              <span class="tag tag-self">
+                BUILT
+              </span>
             </div>
+
             <div class="evidence-row">
-              <strong>Agent Design</strong><span class="tag tag-lab">LAB VERIFIED</span>
+              <strong>AI Workflow</strong>
+              <span class="tag tag-lab">
+                TESTED
+              </span>
             </div>
+
             <div class="evidence-row">
-              <strong>RAG 개발·수행</strong><span class="tag tag-project">PROJECT VERIFIED</span>
+              <strong>User Feedback</strong>
+              <span class="tag tag-project">
+                VALIDATED
+              </span>
             </div>
+
             <div class="evidence-row">
-              <strong>Field Adoption</strong><span class="tag tag-field">FIELD VERIFIED</span>
+              <strong>Business Impact</strong>
+              <span class="tag tag-field">
+                MEASURED
+              </span>
             </div>
+
+
             <footer>
-              <div><small>잘 맞는 이유</small><strong>적합 근거</strong></div>
-              <div><small>보완할 부분</small><strong>부족 역량</strong></div>
-              <div><small>VERIFY</small><strong>추가 확인</strong></div>
-              <div><small>다음 결정</small><strong>권장 단계</strong></div>
+
+              <div>
+                <small>PROBLEM</small>
+                <strong>What changed?</strong>
+              </div>
+
+              <div>
+                <small>RESULT</small>
+                <strong>What improved?</strong>
+              </div>
+
+              <div>
+                <small>GAP</small>
+                <strong>What failed?</strong>
+              </div>
+
+              <div>
+                <small>NEXT</small>
+                <strong>What comes next?</strong>
+              </div>
+
             </footer>
+
           </div>
+
         </div>
       </section>
 
-      <section class="ecosystem-section" aria-labelledby="ecosystem-title">
+
+      <!-- =========================
+           PRINCIPLES
+      ========================== -->
+      <section
+        class="ecosystem-section"
+        aria-labelledby="ecosystem-title"
+      >
+
         <div class="ecosystem-heading" data-reveal>
-          <p class="eyebrow eyebrow-dark">사람을 만나고 실력을 확인하는 기반</p>
-          <h2 id="ecosystem-title">Community는 목적지가 아니라<br />실행 역량이 자라는 기반입니다.</h2>
-          <p>
-            Learn과 Lab은 메인 상업 상품이 아닙니다. 사람을 발견하고, 실제 문제를 함께 다루며,
-            검증 가능한 수행 근거를 만드는 기반입니다.
+
+          <p class="eyebrow eyebrow-dark">
+            OUR PRINCIPLES
           </p>
-          <a class="architecture-link" href="architecture.html">
-            HBKR 전체 서비스·저장소 설계 보기 <span aria-hidden="true">→</span>
-          </a>
+
+          <h2 id="ecosystem-title">
+            Build less.
+            <br />
+            <em>Build what matters.</em>
+          </h2>
+
+          <p>
+            We believe good AI work is not about using the newest model.
+            It is about solving the right problem with the right amount
+            of technology.
+          </p>
+
         </div>
+
 
         <ol class="ecosystem-flow" data-reveal>
-          <li><span>COMMUNITY</span><strong>사람과 관점이 만남</strong></li>
-          <li><span>LEARN</span><strong>AI/AX 활용 역량을 확장</strong></li>
-          <li><span>LAB</span><strong>가설과 실패를 실험</strong></li>
-          <li><span>수행 근거</span><strong>역할과 결과를 기록</strong></li>
-          <li class="flow-work"><span>WORK</span><strong>유료 프로젝트로 전환</strong></li>
+
+          <li>
+            <span>01 · PROBLEM</span>
+            <strong>Understand what actually hurts.</strong>
+          </li>
+
+          <li>
+            <span>02 · FIT</span>
+            <strong>Decide whether AI is even needed.</strong>
+          </li>
+
+          <li>
+            <span>03 · BUILD</span>
+            <strong>Create the smallest useful system.</strong>
+          </li>
+
+          <li>
+            <span>04 · TEST</span>
+            <strong>Put it in front of real users.</strong>
+          </li>
+
+          <li class="flow-work">
+            <span>05 · IMPROVE</span>
+            <strong>Measure, learn, and iterate.</strong>
+          </li>
+
         </ol>
 
+
         <div class="field-lab" data-reveal>
+
           <div class="field-lab-label">
-            <span>FIRST VERTICAL FIELD LAB</span>
+            <span>EXPERIMENTAL WORK</span>
             <strong>01</strong>
           </div>
+
           <div>
-            <p class="eyebrow eyebrow-dark">CAMPING × AI/AX</p>
-            <h3>캠핑하는 프로그래머</h3>
-            <p>
-              캠핑이라는 실제 환경에서 문제를 발견하고, AI 프로토타입을 사용해 보고,
-              예상과 현실의 차이를 수행 근거로 남기는 HBKR의 첫 번째 Vertical Community입니다.
+
+            <p class="eyebrow eyebrow-dark">
+              REAL WORLD × AI
             </p>
-            <a href="https://www.ilhoko.com/" target="_blank" rel="noreferrer">
-              기존 활동 기록 보기 <span aria-hidden="true">↗</span>
+
+            <h3>
+              From prototype to reality.
+            </h3>
+
+            <p>
+              We experiment with AI in real environments to discover
+              practical problems, test ideas, and turn useful findings
+              into better systems.
+            </p>
+
+            <a
+              href="https://www.ilhoko.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore external activity
+              <span aria-hidden="true">↗</span>
             </a>
+
           </div>
+
         </div>
+
       </section>
 
-      <section class="legacy-section" id="history" aria-labelledby="legacy-title">
-        <div class="legacy-inner">
-          <div class="legacy-heading" data-reveal>
-            <div>
-              <p class="eyebrow eyebrow-dark">THE DOMAIN REMAINED</p>
-              <h2 id="legacy-title">멈췄던 도메인 위에,<br /><em>같은 태도로 다시 시작합니다.</em></h2>
-            </div>
-            <p>
-              HBKR는 어느 날 새로 만든 이름만은 아닙니다. 과거 개발자들이 만나고,
-              배우고, 무언가를 직접 만들던 HungryBoxer의 시간이 이 주소에 남아 있습니다.
-            </p>
-          </div>
 
-          <div class="legacy-timeline" data-reveal>
-            <article class="legacy-then">
-              <header><span>THEN</span><small>ORIGIN</small></header>
-              <p class="legacy-domain">hbkr.net</p>
-              <h3>HungryBoxer</h3>
-              <p>
-                개발자들이 모여 지식과 경험을 나누고, 함께 배우며 무언가를 만들어보려 했던
-                개발자 동호회였습니다.
-              </p>
-            </article>
+      <!-- =========================
+           BOUNDARY
+      ========================== -->
+      <section
+        class="boundary-section"
+        aria-labelledby="boundary-title"
+      >
 
-            <article class="legacy-bridge">
-              <header><span>RESTART</span><small>FIRST STEP</small></header>
-              <p class="legacy-domain">Community × Field</p>
-              <h3>캠핑하는 프로그래머</h3>
-              <p>
-                오래 멈춰 있던 커뮤니티의 감각을 작은 프로젝트 모임으로 다시 시작했습니다.
-                캠핑 현장의 문제를 AI와 개발로 다루는 첫 번째 실험이 되었습니다.
-              </p>
-            </article>
-
-            <article class="legacy-now">
-              <header><span>NOW</span><small>다음 결정 역할</small></header>
-              <p class="legacy-domain">AI/AX Execution</p>
-              <h3>HBKR</h3>
-              <p>
-                이제 사람의 가능성을 실제 AI/AX 과제와 연결합니다. 함께 배우고 직접 만들던
-                태도를 수행 근거와 유료 프로젝트로 이어갑니다.
-              </p>
-            </article>
-          </div>
-
-          <p class="legacy-note" data-reveal>
-            HungryBoxer는 과거의 이름으로 보존합니다. 현재의 HBKR를 그 약자로 억지로
-            다시 정의하지 않지만, 사람이 만나 배우고 만드는 태도는 계속 이어갑니다.
-          </p>
+        <div class="boundary-symbol" aria-hidden="true">
+          ≠
         </div>
-      </section>
 
-      <section class="boundary-section" aria-labelledby="boundary-title">
-        <div class="boundary-symbol" aria-hidden="true">≠</div>
         <div data-reveal>
-          <p class="eyebrow">COMMERCIAL 맡지 않는 범위</p>
-          <h2 id="boundary-title">커뮤니티 참여는 무료 노동이 아닙니다.</h2>
-          <p>
-            기업의 상업적 가치가 명확해지는 순간 Community와 Lab 활동을 멈추고,
-            Scope · Contract · Compensation이 있는 WORK로 전환합니다. Lab 결과의 IP와
-            Contributor 권리도 별도 합의 없이 자동 이전되지 않습니다.
+
+          <p class="eyebrow">
+            WHAT WE DON'T DO
           </p>
+
+          <h2 id="boundary-title">
+            We don't build AI
+            <br />
+            just because we can.
+          </h2>
+
+          <p>
+            If a spreadsheet, normal software, process change, or simple
+            automation solves the problem better, we will tell you.
+            The technology should serve the outcome — not the other way around.
+          </p>
+
         </div>
+
       </section>
 
-      <section class="start-section" id="start">
+
+      <!-- =========================
+           START PROJECT
+      ========================== -->
+      <section
+        class="start-section"
+        id="start"
+      >
+
         <div class="start-heading" data-reveal>
-          <p class="eyebrow">TWO SIDES, ONE EXECUTION</p>
-          <h2>AI/AX 과제와 실행자가<br />같은 기준으로 만나는 곳.</h2>
-          <p>
-            지금은 초기 운영 구조와 접수 기준을 만들고 있습니다. 확정되지 않은 프로그램,
-            인력 규모나 계약 조건을 먼저 약속하지 않습니다.
+
+          <p class="eyebrow">
+            START A PROJECT
           </p>
+
+          <h2>
+            Have an AI idea?
+            <br />
+            <em>Let's make it real.</em>
+          </h2>
+
+          <p>
+            Tell us what you are trying to improve. You do not need to
+            know which AI technology you need. We will start with the
+            problem.
+          </p>
+
         </div>
+
+
         <div class="start-paths">
+
           <article data-reveal>
+
             <span>FOR BUSINESS</span>
-            <h3>AI/AX 프로젝트가 필요하다면</h3>
-            <p>무료 사전 적합성 확인 후 가치가 있는 과제를 유료 AI/AX 사전 진단로 전환합니다.</p>
-            <a href="architecture.html#offer">초기 Offer 구조 보기 <span aria-hidden="true">→</span></a>
+
+            <h3>
+              I have a problem to solve.
+            </h3>
+
+            <p>
+              Tell us about your workflow, bottleneck, goals, existing
+              systems, and what you want to improve.
+            </p>
+
+            <strong>
+              Project intake coming next →
+            </strong>
+
           </article>
+
+
           <article data-reveal>
-            <span>FOR PRACTITIONERS</span>
-            <h3>AI/AX 실행 경험이 있다면</h3>
-            <p>할 수 있는 일, 제공 산출물, 수행 근거, 참여 조건과 비선호 경계를 함께 정리합니다.</p>
-            <strong>실행자 참여 채널 준비 중</strong>
+
+            <span>FOR BUILDERS</span>
+
+            <h3>
+              I build AI systems.
+            </h3>
+
+            <p>
+              Share your capabilities, experience, preferred projects,
+              and the type of work you want to take on.
+            </p>
+
+            <strong>
+              Builder network coming next →
+            </strong>
+
           </article>
+
         </div>
+
       </section>
+
     </main>
 
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer class="site-footer">
+
       <div class="footer-brand">
-        <img src="assets/hbkr-mark.svg" alt="" width="44" height="44" />
-        <p><strong>HBKR</strong><span>AI/AX 프로젝트 실행 네트워크</span></p>
+
+        <img
+          src="assets/hbkr-mark.svg"
+          alt=""
+          width="44"
+          height="44"
+        />
+
+        <p>
+          <strong>HBKR</strong>
+          <span>AI SYSTEMS & EXECUTION</span>
+        </p>
+
       </div>
-      <a class="footer-link" href="architecture.html">Service Architecture ↗</a>
-      <p>© <span data-year></span> HBKR. Early-stage concept site.</p>
+
+      <p>
+        Problem → Design → Build → Deploy → Verify
+      </p>
+
+      <p>
+        © <span data-year></span> HBKR. All rights reserved.
+      </p>
+
     </footer>
+
   </body>
 </html>
